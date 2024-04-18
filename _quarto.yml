@@ -1,0 +1,39 @@
+project:
+  type: book
+
+book:
+  site-url: https://example.com
+  title: "banner"
+  author: "Maëlle Salmon"
+  date: "4/18/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    template-partials:
+      - metadata.html
+    theme: cosmo
+
+babelquarto:
+  languagecodes:
+  - name: es
+    text: "Version in es"
+  - name: fr
+    text: "Version in fr"
+  - name: en
+    text: "Version in en"
+  mainlanguage: 'en'
+  languages: ['es', 'fr']
+title-es: title in es
+title-fr: title in fr
+description-es: description in es
+description-fr: description in fr
+author-es: author in es
+author-fr: author in fr
+lang: en
